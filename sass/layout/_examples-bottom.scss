@@ -1,0 +1,18 @@
+.porfolio__bottom-part {
+  padding: 20px 24px;
+
+  border: 1px solid var(--card-border-background);
+  border-top: none;
+}
+
+.porfolio__title {
+  margin-bottom: 4px;
+
+  color: var(--secondary-black-color);
+
+  @include font(700, 18px, 2, 0.06em);
+}
+
+.porfolio__type {
+  @include font(null, 16px, 1.87, 0.03em);
+}

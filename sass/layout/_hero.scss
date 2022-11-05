@@ -1,0 +1,39 @@
+.hero {
+  text-align: center;
+  padding: 200px 0;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--dark-background);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/index/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    width: 696px;
+    margin: 0 auto 30px;
+
+    color: var(--primary-white-color);
+
+    @include font(900, 44px, 1.36, 0.06em);
+    text-transform: uppercase;
+  }
+}
+
+.hero__button {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+
+  @include font(700, 16px, 1.88, 0.06em);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-background-color);
+  }
+}

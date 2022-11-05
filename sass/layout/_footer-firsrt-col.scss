@@ -1,0 +1,26 @@
+.contact-address {
+  font-style: normal;
+}
+
+.address-list__link {
+  color: var(--gray-opacity-color);
+  line-height: 1.71;
+
+  transition: color var(--transition-standart);
+
+  &[href*='maps'] {
+    color: var(--primary-white-color);
+
+    transition: color var(--transition-standart);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-blue-color);
+  }
+}
+
+.address-list__item:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
