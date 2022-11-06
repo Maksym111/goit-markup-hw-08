@@ -5,6 +5,14 @@ body {
 
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+main {
+  margin-top: 60px;
 }
 
 // main {

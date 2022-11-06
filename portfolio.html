@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 7</title>
+    <title>Homework 8</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,39 +20,82 @@
     <header class="header">
       <div class="container header__container">
         <nav class="main-nav">
-          <a href="./index.html" class="logo">Web<span class="logo__word-header">Studio</span></a>
+          <a href="./index.html" class="logo main-nav--logo"
+            >Web<span class="logo__word-header">Studio</span></a
+          >
 
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a href="./index.html" class="link site-nav__link">Студія</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="link site-nav__link site-nav__link--current"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="site-nav__item"><a href="" class="link site-nav__link">Контакти</a></li>
-          </ul>
+          <button type="button" class="burger-btn" aria-expanded="false" data-menu-open>
+            <svg
+              class="burger-btn__image"
+              width="24px"
+              height="16px"
+              aria-label="Відкривач мобільного меню"
+            >
+              <use class="burger-btn__burger" href="./images/icons.svg#icon-menu-burger"></use>
+            </svg>
+          </button>
+
+          <div class="backdrop-menu backdrop-menu--is-hidden" data-menu>
+            <div class="backdrop-menu__content">
+              <button type="button" class="backdrop-menu__btn-cross" data-menu-close>
+                <svg
+                  class="burger-btn__image"
+                  width="24px"
+                  height="16px"
+                  aria-label="Закривач мобільного меню"
+                >
+                  <use href="./images/icons.svg#icon-close-burger"></use>
+                </svg>
+              </button>
+              <ul class="site-nav list">
+                <li class="site-nav__item">
+                  <a href="./index.html" class="link site-nav__link">Студія</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="./portfolio.html" class="link site-nav__link site-nav__link--current"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="site-nav__item"><a href="" class="link site-nav__link">Контакти</a></li>
+              </ul>
+
+              <div class="backdrop-menu__bottom">
+                <ul class="info-nav list">
+                  <li class="info-nav__item">
+                    <a href="mailto:info@devstudio.com" class="link info-nav__link">
+                      <svg class="info-nav__icon" width="16px" height="12px">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                      </svg>
+                      info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="info-nav__item">
+                    <a href="tel:+380961111111" class="link info-nav__link">
+                      <svg class="info-nav__icon" width="12px" height="16px">
+                        <use href="./images/icons.svg#icon-tel"></use>
+                      </svg>
+                      +38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+                <ul class="soc-nav list">
+                  <li class="soc-nav__item">
+                    <a href="" class="link soc-nav__link">Instagram</a>
+                  </li>
+                  <li class="soc-nav__item">
+                    <a href="" class="link soc-nav__link">Twitter</a>
+                  </li>
+                  <li class="soc-nav__item">
+                    <a href="" class="link soc-nav__link">Facebook</a>
+                  </li>
+                  <li class="soc-nav__item">
+                    <a href="" class="link soc-nav__link">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </nav>
-
-        <ul class="info-nav">
-          <li class="info-nav__item">
-            <a href="mailto:info@devstudio.com" class="link info-nav__link">
-              <svg class="info-nav__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="info-nav__item">
-            <a href="tel:+380961111111" class="link info-nav__link">
-              <svg class="info-nav__icon" width="12px" height="16px">
-                <use href="./images/icons.svg#icon-tel"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
 

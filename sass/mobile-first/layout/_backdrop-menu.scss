@@ -8,6 +8,9 @@
 
   overflow-y: scroll;
 
+  transform: translateX(0);
+  transition: transform var(--transition-standart);
+
   &__content {
     // display: flex;
     // flex-direction: column;
@@ -16,7 +19,7 @@
 }
 
 .backdrop-menu--is-hidden {
-  opacity: 0;
+  transform: translateX(100%);
   pointer-events: none;
 }
 
