@@ -1,0 +1,24 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-background);
+}
+
+.column:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// .container--column-list {
+//   display: flex;
+//   align-items: baseline;
+// }
+
+// .column:not(:last-child) {
+//   margin-right: 70px;
+// }

@@ -1,0 +1,28 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__title {
+    margin-bottom: 30px;
+
+    @include font(700, 28px, 1.17, 0.03em, center);
+
+    color: var(--secondary-black-color);
+  }
+}
+
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+
+//   &--without-botpadding {
+//     padding-bottom: 0;
+//   }
+
+//   &__title {
+//     margin-bottom: 50px;
+
+//     @include font(700, 36px, 1.16, 0.03em);
+
+//   }
+// }
