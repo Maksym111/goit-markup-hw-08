@@ -9,8 +9,10 @@
     menu: document.querySelector('[data-menu]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  function toggleMenu() {
+    document.body.classList.toggle('modal-open');
+    refs.menu.classList.toggle('backdrop-menu--is-hidden');
+  }
 
   refs.openMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
@@ -20,16 +22,8 @@
     refs.modal.classList.toggle('backdrop--is-hidden');
   }
 
-  function toggleMenu() {
-    document.body.classList.toggle('modal-open');
-    refs.menu.classList.toggle('backdrop-menu--is-hidden');
+  if (refs.modal != null) {
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
   }
-
-  // const menuBtnRef = document.querySelector('[data-menu]');
-
-  // menuBtnRef.addEventListener('click', () => {
-  //   const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-  //   menuBtnRef.classList.toggle('backdrop-menu--is-hidden');
-  //   menuBtnRef.setAttribute('aria-expanded', !expanded);
-  // });
 })();
