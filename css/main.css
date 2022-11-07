@@ -118,7 +118,6 @@ main {
 }
 
 .container {
-  width: 450px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -180,6 +179,8 @@ main {
 
 /* ----------FOOTER-BUTTON---------- */
 .subscribe-form__button {
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 31px;
   font-weight: 700;
   font-size: 16px;
@@ -262,8 +263,8 @@ main {
   position: relative;
   position: fixed;
   left: 0;
+  right: 0;
   top: 0;
-  width: 100%;
   background-color: var(--primary-white-color);
   border-bottom: 1px solid var(--gray-header-border);
   background-color: var(--primary-white-color);
@@ -360,6 +361,11 @@ main {
 .info-nav__link[href^=tel]:hover, .info-nav__link[href^=tel]:focus {
   color: var(--btn-background-color);
 }
+@media (max-width: 394px) {
+  .info-nav__link[href^=tel] {
+    font-size: 24px;
+  }
+}
 
 .info-nav__link[href^=mailto] {
   color: var(--primary-text-color);
@@ -375,20 +381,30 @@ main {
 
 .soc-nav {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
 }
 .soc-nav__item:not(:last-child) {
   margin-right: 20px;
 }
-
-.soc-nav__item:not(:last-child)::after {
-  content: "";
-  height: 100%;
-  border: 1px solid var(--input-border-color);
-  position: absolute;
-  margin-left: 10px;
+@media (max-width: 480px) {
+  .soc-nav {
+    margin-bottom: -20px;
+  }
+  .soc-nav__item {
+    margin-bottom: 20px;
+  }
 }
 
+@media (min-width: 454px) {
+  .soc-nav__item:not(:last-child) ::after {
+    content: "";
+    height: 100%;
+    border: 1px solid var(--input-border-color);
+    position: absolute;
+    margin-left: 10px;
+  }
+}
 .soc-nav__link {
   font-weight: 500;
   font-size: 18px;
@@ -410,7 +426,7 @@ main {
   background-size: cover;
 }
 .hero__title {
-  width: 360px;
+  max-width: 360px;
   margin: 0 auto 30px;
   color: var(--primary-white-color);
   font-weight: 900;
@@ -458,7 +474,7 @@ main {
 .modal {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 70%;
   width: 450px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706), 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
@@ -466,6 +482,21 @@ main {
   transition: transform var(--transition-standart);
 }
 
+@media (max-width: 374px) {
+  .modal {
+    width: 300px;
+  }
+}
+@media (min-width: 375px) and (max-width: 423px) {
+  .modal {
+    width: 350px;
+  }
+}
+@media (min-width: 424px) and (max-width: 479px) {
+  .modal {
+    width: 400px;
+  }
+}
 .modal__btn-close {
   position: absolute;
   right: 8px;
@@ -486,14 +517,13 @@ main {
   fill: currentColor;
 }
 
-.form {
+.modal-form {
   display: flex;
   flex-direction: column;
   text-align: left;
   padding: 40px;
 }
-
-.form__title {
+.modal-form__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -604,6 +634,34 @@ main {
   margin: -1px;
 }
 
+@media (max-width: 423px) {
+  .checkbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .checkbox-wrapper__label {
+    margin-left: 30px;
+    margin-top: 3px;
+  }
+  .checkbox-wrapper__link {
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+}
+@media (min-width: 424px) and (max-width: 479px) {
+  .checkbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .checkbox-wrapper__label {
+    margin-left: -12px;
+    padding-top: 3px;
+  }
+  .checkbox-wrapper__link {
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+}
 .checkbox-wrapper__symbol {
   position: absolute;
   left: 0;
@@ -788,14 +846,16 @@ main {
 }
 
 .subscribe-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
+  width: 100%;
 }
 
 .subscribe-form__input {
-  display: inline-block;
-  width: 450px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 450px;
   padding: 15px 16px;
   margin-bottom: 20px;
   color: var(--gray-opacity-color);

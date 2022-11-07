@@ -12,7 +12,6 @@
     cursor: pointer;
     margin-left: 18px;
   }
-
   &__checkbox {
     position: absolute;
     white-space: nowrap;
@@ -26,6 +25,40 @@
     margin: -1px;
   }
 }
+
+@media (max-width: 423px) {
+  .checkbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__label {
+      margin-left: 30px;
+      margin-top: 3px;
+    }
+
+    &__link {
+      margin-top: 20px;
+      margin-bottom: -10px;
+    }
+  }
+}
+
+@media (min-width: 424px) and (max-width: 479px) {
+  .checkbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    &__label {
+      margin-left: -12px;
+      padding-top: 3px;
+    }
+
+    &__link {
+      margin-top: 20px;
+      margin-bottom: -10px;
+    }
+  }
+}
+
 // .checkbox-wrapper {
 //   &__label {
 //     line-height: 1.71;

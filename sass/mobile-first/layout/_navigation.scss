@@ -94,6 +94,10 @@
   &:focus {
     color: var(--btn-background-color);
   }
+
+  @media (max-width: 394px) {
+    font-size: 24px;
+  }
 }
 
 .info-nav__link[href^='mailto'] {
@@ -112,19 +116,29 @@
 
 .soc-nav {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
 
   &__item:not(:last-child) {
     margin-right: 20px;
   }
+
+  @media (max-width: 480px) {
+    margin-bottom: -20px;
+    &__item {
+      margin-bottom: 20px;
+    }
+  }
 }
 
-.soc-nav__item:not(:last-child)::after {
-  content: '';
-  height: 100%;
-  border: 1px solid var(--input-border-color);
-  position: absolute;
-  margin-left: 10px;
+@media (min-width: 454px) {
+  .soc-nav__item:not(:last-child) ::after {
+    content: '';
+    height: 100%;
+    border: 1px solid var(--input-border-color);
+    position: absolute;
+    margin-left: 10px;
+  }
 }
 
 .soc-nav__link {

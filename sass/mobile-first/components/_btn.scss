@@ -72,6 +72,8 @@
 
 /* ----------FOOTER-BUTTON---------- */
 .subscribe-form__button {
+  margin-left: auto;
+  margin-right: auto;
   @extend %align-center-elem;
   padding: 10px 31px;
 
