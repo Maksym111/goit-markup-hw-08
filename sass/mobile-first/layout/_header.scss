@@ -11,8 +11,9 @@
   z-index: 5;
 }
 
-// @media (min-width: 481px) {
+// @media (min-width: 1200px) {
 //   .header__container {
-//     @extend %align-center-elem;
+//     display: flex;
+//     align-items: center;
 //   }
 // }

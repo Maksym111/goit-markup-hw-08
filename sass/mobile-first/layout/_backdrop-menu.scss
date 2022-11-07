@@ -42,6 +42,26 @@
   }
 }
 
-.burger-btn__image {
-  fill: currentColor;
+@media (min-width: 768px) {
+  .backdrop-menu {
+    position: static;
+    overflow: auto;
+    width: 100%;
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
+
+  .backdrop-menu--is-hidden {
+    transform: none;
+    pointer-events: all;
+  }
+
+  .backdrop-menu__btn-cross {
+    display: none;
+  }
 }

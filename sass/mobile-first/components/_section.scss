@@ -11,18 +11,18 @@
   }
 }
 
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 
-//   &--without-botpadding {
-//     padding-bottom: 0;
-//   }
+    &--without-botpadding {
+      padding-bottom: 0;
+    }
 
-//   &__title {
-//     margin-bottom: 50px;
-
-//     @include font(700, 36px, 1.16, 0.03em);
-
-//   }
-// }
+    &__title {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
+  }
+}

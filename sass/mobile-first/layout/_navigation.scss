@@ -1,10 +1,6 @@
 .main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.main-nav {
   @extend %align-center-elem;
+  justify-content: space-between;
 }
 
 .site-nav {
@@ -28,40 +24,59 @@
   }
 }
 
-// .site-nav {
-//   display: flex;
-//   margin: 0;
-//   margin-left: 93px;
-//   padding-left: 0;
+@media (min-width: 768px) {
+  .main-nav {
+    justify-content: normal;
+  }
 
-//   &__item:not(:last-child) {
-//     margin-right: 50px;
-//   }
-// }
+  .site-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 
-// .site-nav__link {
-//   position: relative;
-//   padding: 32px 0;
-// @include font(500, 14px, 1.14, 0.02em);
+    &__item:not(:last-child) {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
+  }
 
-// &--current {
-//   color: var(--accent-blue-color);
-// }
-// }
+  .site-nav__link {
+    position: relative;
 
-// .site-nav__link--current::after {
-//   content: '';
-//   display: block;
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
+    display: block;
+    padding: 28px 0;
 
-//   width: 100%;
-//   height: 4px;
-//   border-radius: 2px;
+    @include font(500, 14px, 1.14, 0.02em);
+    color: var(--secondary-black-color);
 
-//   background-color: var(--accent-blue-color);
-// }
+    transition: color var(--transition-standart);
+
+    &--current {
+      color: var(--accent-blue-color);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-blue-color);
+    }
+  }
+
+  .site-nav__link--current::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: var(--accent-blue-color);
+  }
+}
 
 // /* --------INFO-NAV-------- */
 
@@ -81,21 +96,24 @@
   &__icon {
     display: none;
   }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    transition: color var(--transition-standart);
+  }
 }
 
 .info-nav__link[href^='tel'] {
   color: var(--accent-blue-color);
-
   @include font(500, 34px, 1.17, 0.02em);
-
-  transition: color var(--transition-standart);
 
   &:hover,
   &:focus {
     color: var(--btn-background-color);
   }
 
-  @media (max-width: 394px) {
+  @media (max-width: 480px) {
     font-size: 24px;
   }
 }
@@ -104,11 +122,60 @@
   color: var(--primary-text-color);
 
   @include font(500, 24px, 1.16, 0.02em);
-  transition: color var(--transition-standart);
 
   &:hover,
   &:focus {
     color: var(--btn-background-color);
+  }
+}
+
+@media (min-width: 768px) {
+  .backdrop-menu__bottom {
+    margin: 0;
+  }
+
+  .info-nav {
+    flex-direction: column;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin: 0;
+
+    &__item:last-child {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    &__icon {
+      display: inline-block;
+      fill: currentColor;
+      margin-right: 8px;
+    }
+  }
+
+  .info-nav__link[href^='tel'] {
+    color: inherit;
+    @include font(null, 12px, 1.17, null);
+
+    transition: color var(--transition-standart);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-blue-color);
+    }
+
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
+  }
+
+  .info-nav__link[href^='mailto'] {
+    color: inherit;
+    @include font(null, 12px, 1.17, null);
+
+    &:hover,
+    &:focus {
+      color: var(--btn-background-color);
+    }
   }
 }
 
@@ -123,7 +190,7 @@
     margin-right: 20px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 453px) {
     margin-bottom: -20px;
     &__item {
       margin-bottom: 20px;
@@ -144,6 +211,17 @@
 .soc-nav__link {
   @include font(500, 18px, 1.2, 0.02em);
   color: var(--accent-blue-color);
+
+  &:hover,
+  &:focus {
+    color: var(--btn-background-color);
+  }
+}
+
+@media (min-width: 768px) {
+  .soc-nav {
+    display: none;
+  }
 }
 
 // .info-nav {
@@ -161,7 +239,6 @@
 //   }
 
 //   &__icon {
-//     fill: currentColor;
 //     margin-right: 10px;
 //   }
 // }

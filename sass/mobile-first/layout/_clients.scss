@@ -11,6 +11,12 @@
   &__image {
     fill: currentColor;
   }
+
+  @media (min-width: 481px) {
+    &__item {
+      width: calc((100% - 6 * 15px) / 3);
+    }
+  }
 }
 
 .clients-list__link {

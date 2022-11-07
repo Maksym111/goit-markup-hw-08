@@ -3,10 +3,11 @@
   margin: 0;
   padding: 12px 8px;
   background-color: transparent;
-}
 
-@media (min-width: 481px) {
-  .burger-btn {
+  @media (min-width: 768px) {
     display: none;
+  }
+  &__image {
+    fill: currentColor;
   }
 }

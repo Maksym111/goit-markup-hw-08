@@ -1,5 +1,18 @@
+@media (min-width: 481px) {
+  .examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .porfolio {
   margin-bottom: 30px;
+
+  @media (min-width: 481px) {
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
+  }
 }
 
 .porfolio__link {

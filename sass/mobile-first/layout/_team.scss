@@ -2,6 +2,14 @@
   background-color: var(--gray-background);
 }
 
+.team-list {
+  @media (min-width: 481px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .employee {
   width: 100%;
 
@@ -24,6 +32,11 @@
     margin-bottom: 10px;
     font-weight: 500;
     color: var(--secondary-black-color);
+  }
+
+  @media (min-width: 481px) {
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
   }
 }
 

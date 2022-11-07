@@ -14,10 +14,14 @@
   align-items: center;
 }
 
-// .container--column-list {
-//   display: flex;
-//   align-items: baseline;
-// }
+@media (min-width: 481px) {
+  .container--column-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+}
 
 // .column:not(:last-child) {
 //   margin-right: 70px;

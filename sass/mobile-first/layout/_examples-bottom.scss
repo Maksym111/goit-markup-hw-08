@@ -3,6 +3,13 @@
 
   border: 1px solid var(--card-border-background);
   border-top: none;
+
+  @media (min-width: 481px) {
+    height: 175px;
+  }
+  @media (min-width: 808px) {
+    height: auto;
+  }
 }
 
 .porfolio__title {

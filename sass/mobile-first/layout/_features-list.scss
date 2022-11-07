@@ -2,6 +2,21 @@
   &__item:not(:last-child) {
     margin-bottom: 30px;
   }
+
+  @media (min-width: 481px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &__item {
+      margin: 15px;
+      width: calc((100% - 4 * 15px) / 2);
+    }
+  }
 }
 
 .features__image-wrapper {
