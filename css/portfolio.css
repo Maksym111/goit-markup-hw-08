@@ -234,6 +234,11 @@ main {
   background-color: transparent;
 }
 
+@media (min-width: 481px) {
+  .burger-btn {
+    display: none;
+  }
+}
 .soc-networks {
   display: flex;
   margin-top: 16px;

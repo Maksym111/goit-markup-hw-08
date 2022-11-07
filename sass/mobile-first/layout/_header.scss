@@ -11,9 +11,8 @@
   z-index: 5;
 }
 
-// .header {
-
-//   &__container {
+// @media (min-width: 481px) {
+//   .header__container {
 //     @extend %align-center-elem;
 //   }
 // }
