@@ -23,6 +23,16 @@
   }
 }
 
-// .column:not(:last-child) {
-//   margin-right: 70px;
-// }
+@media (min-width: 1200px) {
+  .column {
+    align-items: flex-start;
+  }
+  .container--column-list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .column:not(:last-child) {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}

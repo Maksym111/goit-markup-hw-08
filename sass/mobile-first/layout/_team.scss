@@ -25,7 +25,7 @@
 
   &__title,
   &__job {
-    @include font(400, 16px, 1.17, 0.03em, center);
+    @include font(400, 16px, 1.18, 0.03em, center);
   }
 
   &__title {
@@ -40,23 +40,12 @@
   }
 }
 
-// .team-list {
-//   display: flex;
-//   gap: 30px;
-// }
+@media (min-width: 1200px) {
+  .employee {
+    width: calc((100% - 8 * 15px) / 4);
 
-// /* calc((100% - кол-во маржинов * значение маржинов) / кол-во элементов в строке) */
-
-// .employee {
-//   width: calc((100% - 90px) / 4);
-
-//   &__describe {
-//     padding-top: 30px;
-//     padding-bottom: 30px;
-//   }
-
-//   &__title,
-//   &__job {
-//     @include font(400, 16px, 1.18, 0.03em, center);
-//   }
-// }
+    &__describe {
+      padding-bottom: 30px;
+    }
+  }
+}

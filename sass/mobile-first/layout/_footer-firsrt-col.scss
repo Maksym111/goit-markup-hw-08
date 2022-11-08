@@ -1,6 +1,10 @@
 .contact-address {
   font-style: normal;
   text-align: center;
+
+  @media (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .address-list__link {
@@ -23,9 +27,8 @@
 
 .address-list__item:not(:last-child) {
   margin-bottom: 8px;
-}
 
-// .address-list__item:not(:last-child) {
-//   margin-top: 0;
-//   margin-bottom: 9px;
-// }
+  @media (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+}

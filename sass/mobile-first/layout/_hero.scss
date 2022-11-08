@@ -37,20 +37,29 @@
   }
 }
 
-// .hero {
-//   padding: 200px 0;
+@media (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
+}
 
-//   max-width: 1600px;
-//   height: 600px;
-//
+@media (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
 
-//   &__title {
-//     width: 696px;
+    max-width: 1600px;
+    height: 600px;
+    //
 
-//     @include font(900, 44px, 1.36, 0.06em);
-//   }
-// }
+    &__title {
+      max-width: none;
+      width: 696px;
 
-// .hero__button {
-//   padding: 10px 32px;
-// }
+      @include font(900, 44px, 1.36, 0.06em);
+    }
+  }
+
+  .hero__button {
+    padding: 10px 32px;
+  }
+}

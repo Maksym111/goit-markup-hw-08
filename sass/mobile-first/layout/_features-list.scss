@@ -42,16 +42,10 @@
   @include font(null, 14px, 1.71, 0.03em);
 }
 
-// .features {
-//   display: flex;
-//   gap: 30px;
-
-//   &__item {
-//     width: calc((100% - 90px) / 4);
-//   }
-
-//   &__image-wrapper {
-//     padding: 25px 100px;
-
-//   }
-// }
+@media (min-width: 1200px) {
+  .features {
+    &__item {
+      width: calc((100% - 8 * 15px) / 4);
+    }
+  }
+}

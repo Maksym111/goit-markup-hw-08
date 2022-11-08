@@ -17,6 +17,12 @@
       width: calc((100% - 6 * 15px) / 3);
     }
   }
+
+  @media (min-width: 1200px) {
+    &__item {
+      width: calc((100% - 12 * 15px) / 6);
+    }
+  }
 }
 
 .clients-list__link {
@@ -36,20 +42,3 @@
     color: var(--accent-blue-color);
   }
 }
-
-// .clients-list {
-
-//   &__item:not(:last-child) {
-//     margin-right: 30px;
-//   }
-
-//   &__image {
-//     fill: currentColor;
-//   }
-// }
-
-// .clients-list__link {
-//   width: 170px;
-//   height: 92px;
-
-// }

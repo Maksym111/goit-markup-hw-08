@@ -27,9 +27,16 @@
 
   @include font(null, 18px, 1.56, 0.03em);
   color: var(--primary-white-color);
+
+  @media (min-width: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 }
 // .porfolio__text {
-//   padding: 63px 24px;
 
 //   @include font(null, 18px, 1.56, 0.03em);
 

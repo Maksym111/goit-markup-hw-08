@@ -36,11 +36,15 @@
   }
 }
 
-// .footer__column-third {
-//   width: 570px;
-// }
-
-// .subscribe-form__input {
-//   margin-right: 12px;
-//   width: 100%;
-// }
+@media (min-width: 1200px) {
+  .footer__column-third {
+    width: 570px;
+  }
+  .subscribe-form {
+    display: flex;
+    align-items: baseline;
+  }
+  .subscribe-form__input {
+    margin-right: 12px;
+  }
+}

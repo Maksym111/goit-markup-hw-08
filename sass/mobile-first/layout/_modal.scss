@@ -46,13 +46,11 @@
     top: 50%;
     width: 450px;
   }
-}
 
-// .modal {
-//   width: 528px;
-//   height: 581px;
-//   top: 50%;
-// }
+  @media (min-width: 1200px) {
+    width: 528px;
+  }
+}
 
 .modal__btn-close {
   position: absolute;
@@ -95,10 +93,6 @@
   }
 }
 
-// &__title {
-//   margin-bottom: 12px;
-// }
-
 .label + .label {
   margin-top: 10px;
 }
@@ -125,12 +119,12 @@
   border-radius: $primBordRadius;
 
   transition: border-color var(--transition-standart);
-}
 
-// .input {
-//   padding-top: 11px;
-//   padding-bottom: 11px;
-// }
+  @media (min-width: 1200px) {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}
 
 .input:focus-visible,
 .textarea:focus-visible {
@@ -171,11 +165,11 @@
 
   transition: border-color var(--transition-standart);
 
+  @media (min-width: 1200px) {
+    @include font(null, 12px, 1.16, null);
+  }
+
   &::placeholder {
     color: #75757580;
   }
 }
-
-// .textarea {
-//   @include font(null, 12px, 1.16, 0.01em);
-// }

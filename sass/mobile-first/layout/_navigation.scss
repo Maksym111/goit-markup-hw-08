@@ -33,8 +33,6 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 0;
-    padding: 0;
 
     &__item:not(:last-child) {
       margin-right: 50px;
@@ -44,21 +42,11 @@
 
   .site-nav__link {
     position: relative;
-
-    display: block;
     padding: 28px 0;
 
-    @include font(500, 14px, 1.14, 0.02em);
-    color: var(--secondary-black-color);
-
-    transition: color var(--transition-standart);
+    @include font(null, 14px, 1.14, null);
 
     &--current {
-      color: var(--accent-blue-color);
-    }
-
-    &:hover,
-    &:focus {
       color: var(--accent-blue-color);
     }
   }
@@ -75,6 +63,23 @@
     border-radius: 2px;
 
     background-color: var(--accent-blue-color);
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-nav {
+    display: flex;
+    // justify-content: center;
+    width: auto;
+    margin-left: 93px;
+
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .site-nav__link {
+    padding: 32px 0;
   }
 }
 
@@ -100,7 +105,15 @@
   &__link {
     display: flex;
     align-items: center;
+
+    color: var(--primary-text-color);
+    @include font(500, 24px, 1.16, 0.02em);
+
     transition: color var(--transition-standart);
+    &:hover,
+    &:focus {
+      color: var(--btn-background-color);
+    }
   }
 }
 
@@ -118,17 +131,6 @@
   }
 }
 
-.info-nav__link[href^='mailto'] {
-  color: var(--primary-text-color);
-
-  @include font(500, 24px, 1.16, 0.02em);
-
-  &:hover,
-  &:focus {
-    color: var(--btn-background-color);
-  }
-}
-
 @media (min-width: 768px) {
   .backdrop-menu__bottom {
     margin: 0;
@@ -143,6 +145,15 @@
     &__item:last-child {
       margin-top: 10px;
       margin-bottom: 0;
+    }
+
+    &__link {
+      @include font(null, 12px, 1.17, null);
+
+      &:hover,
+      &:focus {
+        color: var(--btn-background-color);
+      }
     }
 
     &__icon {
@@ -167,14 +178,30 @@
       font-size: 24px;
     }
   }
+}
 
-  .info-nav__link[href^='mailto'] {
-    color: inherit;
-    @include font(null, 12px, 1.17, null);
+@media (min-width: 1200px) {
+  .info-nav {
+    flex-direction: row;
+    padding: 0;
 
-    &:hover,
-    &:focus {
-      color: var(--btn-background-color);
+    &__item:last-child {
+      margin: 0;
+      margin-left: 50px;
+    }
+
+    &__link {
+      @include font(null, 14px, 1.14, null);
+      padding: 32px 0;
+    }
+
+    &__link[href^='tel'] {
+      @include font(null, 14px, 1.14, null);
+      padding: 32px 0;
+    }
+
+    &__icon {
+      margin-right: 10px;
     }
   }
 }

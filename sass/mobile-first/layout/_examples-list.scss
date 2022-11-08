@@ -27,10 +27,11 @@
   }
 }
 
-// .examples-list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+@media (min-width: 1200px) {
+  .porfolio {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+}
 
 // .porfolio {
 //   width: calc((100% - 60px) / 3);
