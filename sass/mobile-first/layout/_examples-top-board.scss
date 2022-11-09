@@ -28,8 +28,19 @@
   @include font(null, 18px, 1.56, 0.03em);
   color: var(--primary-white-color);
 
+  @media (min-width: 481px) {
+    padding: 9px 24px;
+    @include font(null, 11px, 1.56, 0.03em);
+  }
+
+  @media (min-width: 617px) {
+    padding: 13px 24px;
+    @include font(null, 14px, 1.56, 0.03em);
+  }
+
   @media (min-width: 768px) {
     padding: 49px 24px;
+    @include font(null, 18px, 1.56, 0.03em);
   }
 
   @media (min-width: 1200px) {

@@ -663,9 +663,28 @@ main {
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
+@media (min-width: 481px) {
+  .porfolio__text {
+    padding: 9px 24px;
+    font-size: 11px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+  }
+}
+@media (min-width: 617px) {
+  .porfolio__text {
+    padding: 13px 24px;
+    font-size: 14px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+  }
+}
 @media (min-width: 768px) {
   .porfolio__text {
     padding: 49px 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
   }
 }
 @media (min-width: 1200px) {
@@ -684,7 +703,7 @@ main {
     height: 175px;
   }
 }
-@media (min-width: 808px) {
+@media (min-width: 1200px) {
   .porfolio__bottom-part {
     height: auto;
   }

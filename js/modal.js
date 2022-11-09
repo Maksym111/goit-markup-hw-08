@@ -10,8 +10,11 @@
   };
 
   function toggleMenu() {
+    const isMenuOpen = refs.openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    refs.openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     document.body.classList.toggle('modal-open');
     refs.menu.classList.toggle('backdrop-menu--is-hidden');
+    // refs.openMenuBtn.setAttribute('aria-expanded', true);
   }
 
   refs.openMenuBtn.addEventListener('click', toggleMenu);
@@ -26,4 +29,11 @@
     refs.openModalBtn.addEventListener('click', toggleModal);
     refs.closeModalBtn.addEventListener('click', toggleModal);
   }
+
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    refs.menu.classList.add('backdrop-menu--is-hidden');
+    document.body.classList.remove('modal-open');
+    refs.openMenuBtn.setAttribute('aria-expanded', false);
+  });
 })();
