@@ -609,13 +609,38 @@ main {
   padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   max-width: 480px;
   background-color: var(--dark-background);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/background.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/index/mobile/main-bacgr.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  text-align: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/index/mobile/main-bacgr@2x.jpg");
+  }
+}
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/index/tablet/main-bacgr.jpg");
+  }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/index/tablet/main-bacgr@2x.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/index/computer/main-bacgr.jpg");
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/index/computer/main-bacgr@2x.jpg");
+  }
 }
 .hero__title {
   max-width: 360px;
@@ -1023,9 +1048,15 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+    justify-content: center;
   }
 }
 
+@media (max-width: 480px) {
+  .employee:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .employee {
   width: 100%;
   background-color: var(--primary-white-color);
@@ -1050,6 +1081,7 @@ main {
 }
 @media (min-width: 481px) {
   .employee {
+    max-width: 354px;
     margin: 15px;
     width: calc((100% - 60px) / 2);
   }

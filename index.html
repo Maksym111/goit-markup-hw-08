@@ -248,33 +248,72 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="work-list list">
             <li class="work-list__item">
-              <img
-                class="work-list__image"
-                src="./images/index/doing1.jpg"
-                alt="Створюємо функціонал додатків"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/computer/work1.webp    1x,
+                    ./images/index/computer/work1@2x.webp 2x
+                  "
+                />
+                <img
+                  class="work-list__image"
+                  srcset="
+                    ./images/index/computer/work1.jpg    1x,
+                    ./images/index/computer/work1@2x.jpg 2x
+                  "
+                  src="./images/index/computer/work1.jpg"
+                  alt="Створюємо функціонал додатків"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="work-list__title">Десктопні додатки</p>
             </li>
             <li class="work-list__item">
-              <img
-                class="work-list__image"
-                src="./images/index/doing2.jpg"
-                alt="Налаштовуємо інтерфейс додатків"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/computer/work2.webp    1x,
+                    ./images/index/computer/work2@2x.webp 2x
+                  "
+                />
+                <img
+                  class="work-list__image"
+                  srcset="
+                    ./images/index/computer/work2.jpg    1x,
+                    ./images/index/computer/work2@2x.jpg 2x
+                  "
+                  src="./images/index/computer/work2.jpg"
+                  alt="Налаштовуємо інтерфейс додатків"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="work-list__title">Мобільні додатки</p>
             </li>
             <li class="work-list__item">
-              <img
-                class="work-list__image"
-                src="./images/index/doing3.jpg"
-                alt="Оптимізуємо роботу додатків"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/computer/work3.webp    1x,
+                    ./images/index/computer/work3@2x.webp 2x
+                  "
+                />
+                <img
+                  class="work-list__image"
+                  srcset="
+                    ./images/index/computer/work3.jpg    1x,
+                    ./images/index/computer/work3@2x.jpg 2x
+                  "
+                  src="./images/index/computer/work3.jpg"
+                  alt="Оптимізуємо роботу додатків"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="work-list__title">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -287,13 +326,50 @@
 
           <ul class="team-list list">
             <li class="employee">
-              <img
-                class="employee__image"
-                src="./images/index/team1.jpg"
-                alt="Фото Ігора Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/computer/1team.webp    1x,
+                    ./images/index/computer/1team@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/tablet/1team.webp    1x,
+                    ./images/index/tablet/1team@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/mobile/1team.webp    1x,
+                    ./images/index/mobile/1team@2x.webp 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/computer/1team.jpg    1x,
+                    ./images/index/computer/1team@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/index/tablet/1team.jpg 1x, ./images/index/tablet/1team@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+
+                <img
+                  class="employee__image"
+                  srcset="./images/index/mobile/1team.jpg 1px, ./images/index/mobile/1team@2x.jpg 2x"
+                  src="./images/index/mobile/1team.jpg"
+                  alt="Фото Ігора Дем'яненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="employee__describe">
                 <h3 class="employee__title">Ігор Дем'яненко</h3>
                 <p class="employee__job">Продукт-Дизайнер</p>
@@ -331,13 +407,49 @@
             </li>
 
             <li class="employee">
-              <img
-                class="employee__image"
-                src="./images/index/team2.jpg"
-                alt="Фото Ольги Рєпіної"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/computer/2team.webp    1x,
+                    ./images/index/computer/2team@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/tablet/2team.webp    1x,
+                    ./images/index/tablet/2team@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/mobile/2team.webp    1x,
+                    ./images/index/mobile/2team@2x.webp 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/computer/2team.jpg    1x,
+                    ./images/index/computer/2team@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/index/tablet/2team.jpg 1x, ./images/index/tablet/2team@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="employee__image"
+                  srcset="./images/index/mobile/2team.jpg 1px, ./images/index/mobile/2team@2x.jpg 2x"
+                  src="./images/index/mobile/2team.jpg"
+                  alt="Фото Ольги Рєпіної"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="employee__describe">
                 <h3 class="employee__title">Ольга Рєпіна</h3>
                 <p class="employee__job">Фронтенд Розробник</p>
@@ -375,13 +487,49 @@
             </li>
 
             <li class="employee">
-              <img
-                class="employee__image"
-                src="./images/index/team3.jpg"
-                alt="Фото Миколи Тарасова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/computer/3team.webp    1x,
+                    ./images/index/computer/3team@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/tablet/3team.webp    1x,
+                    ./images/index/tablet/3team@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/mobile/3team.webp    1x,
+                    ./images/index/mobile/3team@2x.webp 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/computer/3team.jpg    1x,
+                    ./images/index/computer/3team@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/index/tablet/3team.jpg 1x, ./images/index/tablet/3team@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="employee__image"
+                  srcset="./images/index/mobile/3team.jpg 1px, ./images/index/mobile/3team@2x.jpg 2x"
+                  src="./images/index/mobile/3team.jpg"
+                  alt="Фото Миколи Тарасова"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="employee__describe">
                 <h3 class="employee__title">Микола Тарасов</h3>
                 <p class="employee__job">Маркетолог</p>
@@ -419,13 +567,49 @@
             </li>
 
             <li class="employee">
-              <img
-                class="employee__image"
-                src="./images/index/team4.jpg"
-                alt="Фото Михайла Єрмакова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/computer/4team.webp    1x,
+                    ./images/index/computer/4team@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/tablet/4team.webp    1x,
+                    ./images/index/tablet/4team@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/mobile/4team.webp    1x,
+                    ./images/index/mobile/4team@2x.webp 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="
+                    ./images/index/computer/4team.jpg    1x,
+                    ./images/index/computer/4team@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/index/tablet/4team.jpg 1x, ./images/index/tablet/4team@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="employee__image"
+                  srcset="./images/index/mobile/4team.jpg 1px, ./images/index/mobile/4team@2x.jpg 2x"
+                  src="./images/index/mobile/4team.jpg"
+                  alt="Фото Михайла Єрмакова"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="employee__describe">
                 <h3 class="employee__title">Михайло Єрмаков</h3>
                 <p class="employee__job">Дизайнер інтерфейсу</p>
