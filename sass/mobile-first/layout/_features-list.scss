@@ -31,14 +31,13 @@
 
 .features__title {
   margin-bottom: 10px;
-  text-align: center;
   @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
 
   color: var(--secondary-black-color);
 
-  @media (min-width: 768px) {
-    text-align: left;
+  @media (max-width: 767px) {
+    text-align: center;
   }
 }
 

@@ -966,7 +966,6 @@ main {
 
 .features__title {
   margin-bottom: 10px;
-  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -974,9 +973,9 @@ main {
   text-transform: uppercase;
   color: var(--secondary-black-color);
 }
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .features__title {
-    text-align: left;
+    text-align: center;
   }
 }
 
