@@ -12,7 +12,7 @@
     fill: currentColor;
   }
 
-  @media (min-width: 481px) {
+  @media (min-width: 768px) {
     &__item {
       width: calc((100% - 6 * 15px) / 3);
     }

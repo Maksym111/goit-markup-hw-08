@@ -69,7 +69,6 @@
 @media (min-width: 1200px) {
   .site-nav {
     display: flex;
-    // justify-content: center;
     width: auto;
     margin-left: 93px;
 
@@ -86,7 +85,7 @@
 // /* --------INFO-NAV-------- */
 
 .backdrop-menu__bottom {
-  margin-top: 302px;
+  margin-top: auto;
 }
 
 .info-nav {
@@ -212,26 +211,12 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  row-gap: 15px;
 
   &__item:not(:last-child) {
-    margin-right: 20px;
-  }
-
-  @media (max-width: 453px) {
-    margin-bottom: -20px;
-    &__item {
-      margin-bottom: 20px;
-    }
-  }
-}
-
-@media (min-width: 454px) {
-  .soc-nav__item:not(:last-child) ::after {
-    content: '';
-    height: 100%;
-    border: 1px solid var(--input-border-color);
-    position: absolute;
-    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid var(--input-border-color);
   }
 }
 
