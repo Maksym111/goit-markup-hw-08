@@ -133,10 +133,21 @@ main {
 .container {
   padding: 0 15px;
   margin: 0 auto;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -598,7 +609,7 @@ main {
   padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
-  max-width: 400px;
+  max-width: 480px;
   background-color: var(--dark-background);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/mobile/main-bacgr.jpg");
   background-repeat: no-repeat;
@@ -1081,7 +1092,6 @@ main {
 }
 @media (min-width: 768px) {
   .employee {
-    max-width: 400px;
     margin: 15px;
     width: calc((100% - 60px) / 2);
   }

@@ -4,8 +4,8 @@
   border: 1px solid var(--card-border-background);
   border-top: none;
 
-  @media (min-width: 481px) {
-    height: 175px;
+  @media (min-width: 480px) and (max-width: 1199px) {
+    flex-grow: 1;
   }
   @media (min-width: 1200px) {
     height: auto;
